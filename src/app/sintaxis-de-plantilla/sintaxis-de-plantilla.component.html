@@ -1,0 +1,26 @@
+
+<h3>Binding to one class </h3>
+<h2 [class.main-title-color]="isMainTitle"> El título principal </h2>
+<hr>
+<h3>Binding to multiple css classes</h3>
+<p [class]="mainStyles">
+    Este párrafo tienen un texto normal.<br>
+    Texto de prueba
+</p>
+<hr>
+<p [class.primary-font-color]="applyAllClasses" >
+    Este es un segundo texto de prueba
+</p>
+<hr>
+<h1>binding to a single style</h1>
+<p [style]="paragraphColor">
+    Esto es un párrafo, para ser editado  <br>
+    con un estilo pasado del ts al html, como un string 
+    de estilo
+</p>
+
+<h1>Binding to multiple styles</h1>
+<p [style]="{'font-size' : '15px', 'color' : 'green'}">
+    Multiples estilos pasados como un objeto
+</p>
+<hr>
